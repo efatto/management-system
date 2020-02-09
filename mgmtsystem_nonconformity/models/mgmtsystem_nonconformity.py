@@ -44,9 +44,10 @@ class MgmtsystemNonconformity(models.Model):
         store=True)
     number_of_days_to_close = fields.Integer(
         '# of days to close',
-        compute='_compute_number_of_days_to_close',
-        store=True,
-        readonly=True)
+        # compute='_compute_number_of_days_to_close',
+        # store=True,
+        # readonly=True
+    )
     closing_date = fields.Datetime('Closing Date', readonly=True)
 
     partner_id = fields.Many2one('res.partner', 'Partner', required=True)
