@@ -68,11 +68,13 @@ class MgmtsystemAudit(models.Model):
         'mgmtsystem_action_id',
         'mgmtsystem_audit_id',
         'Improvement Opportunities',
+        copy=False,
     )
 
     nonconformity_ids = fields.Many2many(
         'mgmtsystem.nonconformity',
         string='Nonconformities',
+        copy=False,
     )
     state = fields.Selection(
         [
