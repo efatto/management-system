@@ -177,7 +177,7 @@
         </template>
 
         <report
-            id="action_report_mgmtsystem_nonconformity"
+            id="action_mgmtsystem_nonconformity_report"
             string="Non-Conformity Report"
             model="mgmtsystem.nonconformity"
             report_type="qweb-pdf"
